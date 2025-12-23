@@ -11,7 +11,7 @@ import java.util.Objects;
 public class UserDetailsImpl implements UserDetails {
     private static final long serialVersionUID = 1L;
 
-    private Long id;
+    private String id;
     private String email;
 
     @JsonIgnore
@@ -19,7 +19,7 @@ public class UserDetailsImpl implements UserDetails {
 
     private String fullName;
 
-    public UserDetailsImpl(Long id, String email, String password, String fullName) {
+    public UserDetailsImpl(String id, String email, String password, String fullName) {
         this.id = id;
         this.email = email;
         this.password = password;
@@ -39,7 +39,7 @@ public class UserDetailsImpl implements UserDetails {
         return List.of(); // No roles/authorities for now
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
@@ -59,7 +59,7 @@ public class UserDetailsImpl implements UserDetails {
     @Override
     public String getUsername() {
         return email;
-    } // Using email as username
+    }
 
     @Override
     public boolean isAccountNonExpired() {

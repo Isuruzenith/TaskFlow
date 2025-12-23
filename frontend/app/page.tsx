@@ -12,10 +12,10 @@ export default function Home() {
       </p>
 
       <Link
-        href="/board/demo"
+        href="/auth/login"
         className="group relative inline-flex items-center gap-2 px-8 py-4 bg-white/50 backdrop-blur-md border border-white/60 shadow-xl rounded-full text-gray-700 font-semibold transition-all hover:scale-105 hover:bg-white/70 hover:shadow-2xl"
       >
-        <span>Enter Workspace</span>
+        <span>Get Started</span>
         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
       </Link>
 
